@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 #include "my_print/print_result.h"
 

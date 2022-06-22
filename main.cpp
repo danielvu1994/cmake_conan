@@ -6,7 +6,7 @@
 
 using namespace std;
 
-main() {
+int main() {
 	float first_no, second_no, result_add, result_div;
 
 	std::cout << "Enter first number \t";
@@ -20,6 +20,8 @@ main() {
 
 	print_result("Addition", result_add);
 	print_result("Division", result_div);
+
+	system("pause");
 
 	return 0;
 }
