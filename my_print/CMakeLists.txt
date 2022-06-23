@@ -1,4 +1,5 @@
 add_library(my_print
+SHARED
 src/print_result.cpp)
 
 target_include_directories(my_print

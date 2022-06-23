@@ -2,7 +2,7 @@
 
 #include "my_math/addition.h"
 #include "my_math/division.h"
-#include "my_print/print_result.h"
+#include "my_math/md5.h"
 
 using namespace std;
 
@@ -18,9 +18,10 @@ int main() {
 	result_add = addition(first_no, second_no);
 	result_div = division(first_no, second_no);
 
-	print_result("Addition", result_add);
-	print_result("Division", result_div);
+	print_wrapper("Addition", result_add);
+	print_wrapper("Division", result_div);
 
+	printf_md5();
 	system("pause");
 
 	return 0;
