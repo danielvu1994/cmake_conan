@@ -1,15 +1,13 @@
 cmake_minimum_required(VERSION 3.0.0)
 
-project(Calculator_Project VERSION 1.0.0)
+project(SampleProject VERSION 1.0.0)
 
-include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake) 
-conan_basic_setup()
+add_subdirectory(app/sample)
 
-add_subdirectory(my_math)
+add_subdirectory(lib/my_print)
+add_subdirectory(lib/my_math)
+#FILE(GLOB MySources "src/*.cpp")
+#add_executable(calculator
+#${MySources})
 
-add_subdirectory(my_print)
-
-add_executable(calculator
-main.cpp)
-
-target_link_libraries(calculator PUBLIC my_math)
+#target_link_libraries(calculator PUBLIC my_math)

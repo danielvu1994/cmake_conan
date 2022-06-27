@@ -1,0 +1,7 @@
+[requires]
+#mosquitto/2.0.14
+poco/1.9.4
+
+[generators]
+cmake
+
