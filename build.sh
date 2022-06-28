@@ -5,8 +5,9 @@ LIBS_DIR=$CUR_DIR/libs
 APPS_DIR=$CUR_DIR/apps
 LIBS=
 APPS=
+INSTALL_PATH=$CUR_DIR/build_dir
 
-echo "CUR_DIR is $CUR_DIR"
+export INSTALL_PATH
 
 build() {
 	echo "Makeing $1"
@@ -16,7 +17,7 @@ build() {
 	fi	
 	cd build
        	conan install ..
-       	cmake .. && make && sudo make install ..
+       	cmake .. && make &&  make install ..
 	cd ../..
 }
 
